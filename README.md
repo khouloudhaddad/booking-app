@@ -15,3 +15,5 @@ Command to run a go file: go run <file_name.go>
 3) Data Types
 
 4) Getting User inputs (fmt.Scan(&<var_name>): & is indicating pointer(also called special variable in Go))
+
+5) Arrays vs Slices (Dynamic array)

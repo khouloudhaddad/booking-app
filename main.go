@@ -9,6 +9,8 @@ func main(){
 	//arrays
 	var bookings [50]string
 
+	var sliceBooking []string
+
 	fmt.Printf("Welcome to %v booking application\n",conferenceName)
 	fmt.Println("We have total of",conferenceTickets,"tickets and",remaingTickets,"are still available")
 	fmt.Println("Get your tickets here to attend")
@@ -42,6 +44,10 @@ func main(){
 	// fmt.Printf("conferenceTickets is %T, remaingTickets is %T and conferenceName is %T\n",conferenceTickets, remaingTickets, conferenceName)
 
 	bookings[0] = firstName +" "+lastName
+
+	sliceBooking = append(sliceBooking,firstName +" "+lastName)
+
+	
 	fmt.Printf("The whole array: %v\n", bookings)
 	fmt.Printf("The first value of the array: %v\n", bookings[0])
 	fmt.Printf("The type of the array: %T\n", bookings)
