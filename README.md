@@ -17,3 +17,5 @@ Command to run a go file: go run <file_name.go>
 4) Getting User inputs (fmt.Scan(&<var_name>): & is indicating pointer(also called special variable in Go))
 
 5) Arrays vs Slices (Dynamic array)
+
+5) Loops: In Go we have only one type of loops: for
