@@ -11,3 +11,5 @@ Command to run a go file: go run <file_name.go>
 1) Greet clients
 
 2) Define constantes & variables
+
+3) Data Types
