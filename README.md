@@ -13,3 +13,5 @@ Command to run a go file: go run <file_name.go>
 2) Define constantes & variables
 
 3) Data Types
+
+4) Getting User inputs (fmt.Scan(&<var_name>): & is indicating pointer(also called special variable in Go))

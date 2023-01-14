@@ -13,13 +13,16 @@ func main(){
 
 	//data types
 	var userName string
-	var userTickets int
+	//var userTickets int
 	userName = "Khouloud"
-	userTickets = 2
+	//userTickets = 2
 
-	fmt.Printf("User %v booked %v tickets.\n",userName,userTickets)
+	// fmt.Printf("User %v booked %v tickets.\n",userName,userTickets)
+
+
+	//ask user input
+	fmt.Scan(&userName)
+
 	fmt.Printf("conferenceTickets is %T, remaingTickets is %T and conferenceName is %T\n",conferenceTickets, remaingTickets, conferenceName)
-
-
 
 }
