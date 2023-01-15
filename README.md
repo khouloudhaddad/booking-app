@@ -23,3 +23,5 @@ Command to run a go file: go run <file_name.go>
 6) If...Else
 
 7) Switch
+
+8) Code cleaning => functions
