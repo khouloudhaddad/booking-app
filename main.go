@@ -90,4 +90,19 @@ func main(){
 	fmt.Printf("The first value of the array: %v\n", bookings[0])
 	fmt.Printf("The type of the array: %T\n", bookings)
 	fmt.Printf("The size of the array: %v\n", len(bookings))
+
+	// city
+	city := "London"
+
+	switch city {
+		case "New York": 
+		 //execute
+	case "Singapore":
+		//
+	case "London","Berlin":
+		//
+	default:
+		fmt.Print("No valid city selected")	
+
+	}
 }

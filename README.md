@@ -21,3 +21,5 @@ Command to run a go file: go run <file_name.go>
 5) Loops: In Go we have only one type of loops: for
 
 6) If...Else
+
+7) Switch
