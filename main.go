@@ -18,7 +18,8 @@ func main(){
 	fmt.Println("We have total of",conferenceTickets,"tickets and",remaingTickets,"are still available")
 	fmt.Println("Get your tickets here to attend")
 
-	for{
+	//remaingTickets >0 && len(bookings) < 50
+	for  { //infinite loop
 
 		var userTickets int
 		var firstName string
@@ -31,15 +32,28 @@ func main(){
 
 		fmt.Println("Enter your Last Name:")
 		fmt.Scan(&lastName)
-
 		fmt.Println("Enter your Email:")
 		fmt.Scan(&email)
 
 		fmt.Println("Enter number of tickets:")
 		fmt.Scan(&userTickets)
 
-		if userTickets > int(remaingTickets) {
+		//input validation
+		isValidName := len(firstName) >=2 && len(lastName) >= 2
+		isValidEmail := strings.Contains(email,"@")
+		isValidTicketNumber := userTickets > 0 && userTickets <= int(remaingTickets)
+
+		if isValidName && isValidEmail && isValidTicketNumber{
 			fmt.Printf("We only have %v tickets remaining, so you can't book %v tickets\n", remaingTickets, userTickets)
+			break
+		}else{
+			if !isValidName {
+				fmt.Println("Name is at least two caracters !!")
+			}
+
+			if !isValidEmail{
+				fmt.Println("Email address you entered doesn't contain the @ sign")
+			}
 		}
 
 		//reduce tickets
